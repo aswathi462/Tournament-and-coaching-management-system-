@@ -1,0 +1,110 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Full-screen gradient background */
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to bottom right, #d4edda, #a5d6a7);
+  font-family: "Poppins", sans-serif;
+}
+
+/* White login card */
+.login-box {
+  background: #ffffff;
+  padding: 40px 50px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 90%;
+  max-width: 380px;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Title */
+.login-box h1 {
+  font-size: 1.8rem;
+  color: #2e7d32;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+/* Inputs and dropdown (uniform size) */
+.login-box select,
+.login-box input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1.8px solid #81c784;
+  border-radius: 8px;
+  outline: none;
+  font-size: 0.95rem;
+  color: #1b5e20;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+  height: 44px; /* uniform height for all fields */
+}
+
+/* Placeholder */
+.login-box input::placeholder {
+  color: #4e6f52;
+  opacity: 0.8;
+}
+
+/* Focus effect */
+.login-box select:focus,
+.login-box input:focus {
+  border-color: #388e3c;
+  background-color: #f9fff9;
+  box-shadow: 0 0 6px rgba(56, 142, 60, 0.3);
+}
+
+/* Button */
+.login-box button {
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  padding: 12px 0;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-box button:hover {
+  background-color: #1b5e20;
+  transform: scale(1.03);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .login-box {
+    padding: 30px 25px;
+  }
+
+  .login-box h1 {
+    font-size: 1.5rem;
+  }
+}

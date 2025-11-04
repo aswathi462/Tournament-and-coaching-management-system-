@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./LoginPage.css";
 
 function LoginPage({ setUser }) {
   const [role, setRole] = useState("admin");
@@ -6,23 +7,32 @@ function LoginPage({ setUser }) {
   const [password, setPassword] = useState("");
 
   const handleLogin = () => {
-    // Replace with API authentication
     setUser({ role, username });
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-white">
-      <h1 className="text-3xl text-blue-600 mb-6">Coaching Management Login</h1>
-      <select value={role} onChange={e => setRole(e.target.value)} className="p-2 mb-4 border rounded">
-        <option value="admin">Admin</option>
-        <option value="coach">Coach</option>
-        <option value="player">Player</option>
-      </select>
-      <input type="text" placeholder="Username" value={username} onChange={e => setUsername(e.target.value)}
-        className="p-2 mb-2 border rounded w-64" />
-      <input type="password" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)}
-        className="p-2 mb-6 border rounded w-64" />
-      <button onClick={handleLogin} className="bg-blue-500 text-white px-6 py-2 rounded">Login</button>
+    <div className="login-container">
+      <div className="login-box">
+        <h1>Coaching Management Login</h1>
+        <select value={role} onChange={(e) => setRole(e.target.value)}>
+          <option value="admin">Admin</option>
+          <option value="coach">Coach</option>
+          <option value="player">Player</option>
+        </select>
+        <input
+          type="text"
+          placeholder="Username"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+        <button onClick={handleLogin}>Login</button>
+      </div>
     </div>
   );
 }
