@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import LoginPage from "./components/LoginPage";
-import Dashboard from "./components/Dashboard";
+import LoginPage from "./components/LoginPage.jsx";
+import Dashboard from "./components/Dashboard.jsx";
 
 function App() {
   const [user, setUser] = useState(null);
