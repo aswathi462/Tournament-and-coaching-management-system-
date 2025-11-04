@@ -1,0 +1,55 @@
+.session-scheduler-container {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.session-scheduler-container h2 {
+  color: #2d3748;
+  margin-bottom: 15px;
+}
+
+.add-session-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.add-session-form input {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #cbd5e0;
+}
+
+.add-session-form button {
+  background-color: #38a169;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-session-form button:hover {
+  background-color: #2f855a;
+}
+
+.session-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.session-table th,
+.session-table td {
+  border: 1px solid #e2e8f0;
+  padding: 8px;
+  text-align: center;
+}
+
+.session-table th {
+  background-color: #edf2f7;
+  color: #2d3748;
+}

@@ -1,0 +1,52 @@
+.child-profile-container {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.child-profile-container h2 {
+  margin-bottom: 15px;
+  color: #2d3748;
+}
+
+.child-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.child-card {
+  flex: 1 1 200px;
+  background-color: #edf2f7;
+  border-radius: 8px;
+  padding: 15px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.child-card:hover {
+  transform: scale(1.03);
+  background-color: #e2e8f0;
+}
+
+.child-details {
+  background-color: #f7fafc;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.back-btn {
+  background-color: #3182ce;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  background-color: #2b6cb0;
+}

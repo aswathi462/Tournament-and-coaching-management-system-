@@ -1,0 +1,49 @@
+.attendance-container {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.attendance-container h2 {
+  color: #2d3748;
+  margin-bottom: 15px;
+}
+
+.attendance-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+.attendance-table th,
+.attendance-table td {
+  border: 1px solid #e2e8f0;
+  padding: 10px;
+  text-align: center;
+}
+
+.present-btn {
+  background-color: #38a169;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.absent-btn {
+  background-color: #e53e3e;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.attendance-summary {
+  font-weight: bold;
+  margin-top: 10px;
+  color: #2b6cb0;
+}
